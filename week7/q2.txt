@@ -1,0 +1,58 @@
+0x0013
+
+0000 0000 0001 0011 = 19
+
+
+0x0444
+
+0000 0100 0100 0100 = 1092
+
+0x1234
+
+0001 0010 0011 0100 = 4660
+
+0xffff
+
+1111 1111 1111 1111
+
+take 2's compliment of negative number to convert to positive number (we can 
+think of 2's compliment as multiplying by -1)
+
+0000 0000 0000 0000         take compliment
+0000 0000 0000 0001         add 1 
+
+= 1
+
+but because the sign is negative (and we mul by -1 to find result), we have to multiply out
+result by -1 to get the original answer
+
+final answer: 0xffff = -1
+
+0x8000
+
+1000 0000 0000 0000
+
+0111 1111 1111 1111       take compliment
+1000 0000 0000 0000       add 1
+
+= 32768
+
+mul -1
+
+-32768
+
+0111
++1
+0110
+  1
+
+0100
+ 1
+
+0000
+1
+
+1000
+
+
+
